@@ -14,15 +14,15 @@
     }
 
     a {
-        color: #fed136
+        color:black;
     }
 
     a:hover {
-        color: #fec503
+        color: #fed136;
     }
 
     .text-primary {
-        color: #fed136!important
+        color: #e64c99!important
     }
 
     h1,
@@ -71,10 +71,10 @@
     }
 
     .btn-primary {
-        background-color: #fed136;
-        border-color: #fed136
+        background-color: black;
+        border-color: black;
     }
-
+.btn 
     .btn-primary:active,
     .btn-primary:focus,
     .btn-primary:hover {
@@ -583,7 +583,9 @@
             padding: 0 100px 20px 20px
         }
     }
-
+    .text-muted {
+        color: black!important;
+    }
     .team-member {
         margin-bottom: 50px;
         text-align: center
@@ -607,7 +609,8 @@
 
     section#contact {
         background-color: #212529;
-        background-image: url(../img/map-image.png);
+        /* background-image: url(../img/map-image.png); */
+        background-image: url("http://t3chnical.com/wp-content/uploads/2014/02/bg_contacts.jpg"); 
         background-repeat: no-repeat;
         background-position: center
     }
@@ -740,4 +743,25 @@
         position:relative;
         top:30px;
       }
+     /* FLASHING */
+@keyframes flash {
+	0%,100%,50%{opacity:1}
+	25%,75%{opacity:0}
+}
+.faa-flash.animated,
+.faa-flash.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-flash {
+	animation: flash 2s ease infinite;
+}
+.faa-flash.animated.faa-fast,
+.faa-flash.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-flash.faa-fast {
+	animation: flash 3s ease infinite;
+}
+.faa-flash.animated.faa-slow,
+.faa-flash.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-flash.faa-slow {
+	animation: flash 3s ease infinite;
+}
+
     
